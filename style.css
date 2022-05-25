@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212534;
+}
+
+#quadro{
+    width: 400px;
+    margin: 150px auto;
+}
+
+#quadro *{
+    display: block;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#quadro input, #quadro input::placeholder{
+    text-align: center;
+}
+
+#quadro button{
+    background-color: #191c29;
+    color: white;
+    box-shadow: 0 0 4px white;
+}
+
+#quadro button:hover{
+    background-color: #242734;
+    box-shadow: 0 0 4px 1px white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="quadro">
+        <h4 class="text-center text-white">Safe Password Generator</h4>
+        <input type="text" class="form-control" placeholder="Aqui aparecerá sua senha gerada" id="campo-senha">
+        <input type="range" list="marcas" min="10" max="20" step="5" class="form-range" id="quant-senha">
+        <datalist id="" class="text-white d-flex m-0">
+            <option value="10" label="10 char">
+            <option value=""></option>
+            <option value="15" label="15 char">
+            <option value=""></option>
+            <option value="20" label=" 20 char">
+        </datalist>
+
+        <select name="" id="profile" class="form-select">
+            <option value="low">Low Profile (Letters)</option>
+            <option value="med">Medium Profile (Letters & Nums)</option>
+            <option value="high">High Profile (Letters, Nums & Symbols)</option>
+        </select>
+        <button type="button" id="btn" class="btn" onclick="gerarPass()">Gerar senha</button>
+    </div>
+
+    <script src="gerador.js"></script>
+</body>
+
+</html>
